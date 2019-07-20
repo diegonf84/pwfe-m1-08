@@ -3,31 +3,10 @@
 <head>
   <meta charset="utf-8">
   <title> Aprendiendo GIT </title>
+  <link rel="stylesheet" href="css/style.css">
   <style>
-  /* Anatomia de CSS */
-  /*
-    selector {
-    propiedad: valor;
-    propiedad: valor;
-    }
-    */
-    h2 {
-      font-size:18px;
-      font-family:Arial;
-      background-color: #1bec59;
-    }
-    a{
-      color: #ffffff;
-      background-color: #000;
-      text-decoration: none;
-      font-family: Helvetica, Arial, Open Sans, sans-serif;
-      padding-left: 5px;
-      padding-right: 5px;
-    }
-    a:hover {
-      color: orange;
-      background-color: darkblue;
-    }
+
+
   </style>
 </head>
 <body>
@@ -35,6 +14,16 @@
   <h1>Aprendiendo GIT</h1>
   <h2 style="color:blue">(y no morir en el intento...)</h2>
   <p>Git es un <strong>software de control de versiones</strong> diseñado por <a href="https://es.wikipedia.org/wiki/Linus_Torvalds" target="_blank">Linus Tolvards</a>.</p>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/LinuxCon_Europe_Linus_Torvalds_03_%28cropped%29.jpg/220px-LinuxCon_Europe_Linus_Torvalds_03_%28cropped%29.jpg">
+  <img id="foto-linus" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/LinuxCon_Europe_Linus_Torvalds_03_%28cropped%29.jpg/220px-LinuxCon_Europe_Linus_Torvalds_03_%28cropped%29.jpg">
+  <h3>Historia</h3>
+  <p>Desde su nacimiento en 2005, <strong>Git</strong> ha evolucionado y madurado para ser fácil de usar y aún conservar estas cualidades iniciales. Es tremendamente rápido, muy eficiente con grandes proyectos, y tiene un increíble sistema de ramificación (branching) para desarrollo no lineal.</p>
+  <h3>Estructura</h3>
+  <p>Tu repositorio local esta compuesto por tres <i>"árboles"</i> administrados por git. El primero es tu Workspace que contiene los archivos, el segundo es el Index que actúa como una zona intermedia, y el último es el HEAD o Repository que apunta al último commit realizado. Git nos permite subir y bajar los cambios realizados, desde nuestro HEAD hacia un servidor remoto y viceversa.<br> Otra forma de verlo es por <u>estados</u> de archivos: <i>confirmado</i> (committed), <i>modificado</i> (modified), y <i>preparado</i> (staged). Confirmado significa que los datos están almacenados de manera segura en tu base de datos local. Modificado significa que has modificado el archivo pero todavía no lo has confirmado a tu base de datos. Preparado significa que has marcado un archivo modificado en su versión actual para que vaya en tu próxima confirmación.
+  <h3>Instalción</h3>
+  <p>En Linux, se puede instalar a través de un instalador binario, en general través de la herramienta básica de gestión de paquetes que trae tu distribución.<br> En Windows es muy fácil. El proyecto msysGit tiene uno de los procesos de instalación más sencillos. Simplemente descarga el archivo exe del instalador desde la página de <a href="https://github.com/" target="_blank">GitHub</a>, y ejecútalo: Una vez instalado, tendrás tanto la versión de línea de comandos (incluido un cliente SSH que nos será útil más adelante) como la interfaz gráfica de usuario estándar.</p>
+  <h3>Flujo de trabajo</h3>
+  <p>El flujo de trabajo se puede resumir en 3 simples pasos:</p>
+  <p>1. Modificas una serie de archivos en tu directorio de trabajo.<br>2. Preparas los archivos, añadiendolos a tu área de preparación.<br>3. Confirmas los cambios, lo que toma los archivos tal y como están en el área de preparación, y almacena esas instantáneas de manera permanente en tu directorio de <strong>Git</strong>.
+  <h3>Principales comandos</h3>
 </body>
 </html>
