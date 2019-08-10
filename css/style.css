@@ -67,6 +67,38 @@ img{
   color:white;
 }
 
+/*.noticia {
+  overflow: hidden;
+  
+  padding: 15px;
+  border: #000000;
+  border-style: solid;
+}
+.noticia-img{
+  float: left;
+  width: 30%;
+}
+.noticia-txt{
+  float: right;
+  width: 70%;
+}*/
+.noticia{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;  
+}
+.noticia-img{
+  width: 25%;
+}
+.noticia-txt{
+  width: 65%;
+}
+
+
+
+
+
 /*animaciones CSS*/
 @keyframes slider {
   
