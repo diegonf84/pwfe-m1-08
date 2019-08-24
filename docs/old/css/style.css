@@ -1,0 +1,54 @@
+/* Anatomia de CSS */
+/*
+  selector {
+  propiedad: valor;
+  propiedad: valor;
+  }
+  */
+body{
+  font-family: Arial;
+  font-size: 18px;
+/*color: #FF7C2B;*/
+  color: #FF9F70;
+  background-color: #2C302E;
+  text-align: justify;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1,h2,h3 {
+  font-family:Thaoma;
+  text-align: center;
+}
+h1 {
+  color: #909590;
+  font-size: 55px;
+  text-decoration: underline;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+h2 {
+  color:#909590;
+  font-size:25px;
+}
+a{
+  font-family: Helvetica, Arial, Open Sans, sans-serif;
+  color: #FFB36D;
+  text-decoration: none;
+}
+a:hover {
+  color: #FFF4F7;
+  }
+p{
+  line-height: 150%
+}
+
+#foto-linus {
+  display: block;
+  margin: 0 auto 0 auto;
+  border-top: solid 5px white;
+  border-left: solid 5px white;
+  border-right: solid 5px white;
+  border-bottom: solid 25px white;
+  height: 180px;
+}

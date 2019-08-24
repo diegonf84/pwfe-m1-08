@@ -1,35 +1,160 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title> Aprendiendo GIT </title>
-  <link rel="stylesheet" href="css/style.css">
-  <style>
+<html lang="es-AR">
+  <head>
+    <meta charset="utf-8">
+    <title>DX-DeporteXtremo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="css/reset.css">-->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <!-- Document -->
+    <header>
+      <!-- Logo -->
+      <h1>DeporteXtremo</h1>
+      <!-- Menu -->
+      <nav>
+        <ul>
+          <li><a href="#">Futbol</a></li>
+          <li><a href="#">NBA</a></li>
+          <li><a href="#">Tenis</a></li>
+          <li><a href="#">Fórmula 1</a></li>
+          <li><a href="#">Boxéo</a></li>
+          <li><a href="#">JJOO</a></li>
+          <li><a href="#">Moto GP</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="noticias-destacadas">
+        <!--Slide 1-->
+        <figure>
+          <img src="img/juegos-olimpicos.jpg" alt="Juegos Olimipicos 2024-2028">
+          <figcaption>
+            <h2>Paris y Los Ángeles serán las próximas sedes de los Juegos Olímpicos</h2>
+          </figcaption>  
+        </figure>          
+
+        <figure>
+          <img src="img/f1.jpg" alt="Formula 1">
+          <figcaption>
+            <h2>Ricciardo marcó el ritmo en los libres de Azerbaiyán</h2>
+          </figcaption>  
+        </figure>
+
+        <figure>
+          <img src="img/rally.jpg" alt="Rally Argentina">
+          <figcaption>
+            <h2>En Córdoba arrancó la 1er etapa del 38° Rally de la Argentina</h2>
+          </figcaption>  
+        </figure>
+      </section>
+      
+      <section id="ultimas-noticias" class="container-fluid">
+      <!--Noticia 1-->
+        <article class="row">
+          
+          <div class="col-12 col-sm-4" >
+            <img src="img/sorteo-libertadores.jpg" alt="Sorteo Libertadores">
+          </div>
+            
+          <div class="col-12 col-sm-8">
+            <h3>La tecnología llega a la actual edición de la Libertadores</h3>
+            <p>por <a href="#">Joaquín Angeli</a></p>
+            <p>La Conmebol anunció la implementación del sistema VAR (asistencia arbitral por video) desde las semifinales de la actual Libertadores.</p>
+          </div>
+
+        </article>
+
+      <!--Noticia 2-->
+        <article class="row">
+          
+          <div class="col-12 col-sm-4">
+            <img src="img/tickets-rusia-mundial.jpg" alt="Tickets Rusia">
+          </div>
+              
+          <div class="col-12 col-sm-8">
+            <h3>Comenzó la venta de entradas para el Mundial de Rusia 2018</h3>
+            <p>por <a href="#">Laura Smasnatta</a></p>
+            <p>Hoy se abrió la venta al público de tickets, a través del sitio oficial de la FIFA. El proceso se dividirá en dos partes y los espectadores deberán solicitar una tarjeta de hincha 'Fan ID'.</p>
+          </div>
+  
+        </article>
+        
+      <!--Noticia 3-->
+        <article class="row">
+          
+          <div class="col-12 col-sm-4">
+            <img src="img/firpo.jpg" alt="Firpo">
+          </div>
+              
+          <div class="col-12 col-sm-8">
+            <h3>A 94 años del derechazo que convirtió en leyenda a Luis Ángel Firpo</h3>
+            <p>por <a href="#">Diego Di Marco</a></p>
+            <p>El 14/9/1923 el boxeador argentino enfrento en Nueva York a Jack Dempsey, uno de los mejores pesos pesados de la historia.</p>
+          </div>
+  
+        </article>
+      <!--Noticia 4-->
+        <article class="row">
+          
+          <div class="col-12 col-sm-4">
+            <img src="img/buenos-aires.jpg" alt="Buenos Aires">
+          </div>
+              
+          <div class="col-12 col-sm-8">
+            <h3>Buenos Aires 2018 presentó su innovador proyecto de parques y de ceremonia inaugural ante el COI</h3>
+            <p>por <a href="#">Melina Morales</a></p>
+            <p>El Comité Organizador de los Juegos de la Juventud presentó su concepto de parques ante la 131a sesión del Comité Olímpico Internacional (COI) que se realizó en Lima. La ceremonia inaugural se realizará al aire libre.</p>
+          </div>
+  
+        </article>
 
 
-  </style>
-</head>
-<body>
-  <img src="img/git_imagen.png" width="200px">
-  <h1>Aprendiendo sobre GIT</h1>
-  <h2><i>(y no morir en el intento...)</i></h2>
-  <p>Git es un software de control de versiones diseñado por <a href="https://es.wikipedia.org/wiki/Linus_Torvalds" target="_blank">Linus Tolvards</a>.</p>
-  <img id="foto-linus" src="img/linus.jpg">
-  <h3>Historia</h3>
-  <p>Desde su nacimiento en 2005, Git ha evolucionado y madurado para ser fácil de usar y aún conservar estas cualidades iniciales. Es tremendamente rápido, muy eficiente con grandes proyectos, y tiene un increíble sistema de ramificación (branching) para desarrollo no lineal.</p>
-  <h3>Estructura</h3>
-  <p>Tu repositorio local esta compuesto por tres <i>"árboles"</i> administrados por git. El primero es tu Workspace que contiene los archivos, el segundo es el Index que actúa como una zona intermedia, y el último es el HEAD o Repository que apunta al último commit realizado. Git nos permite subir y bajar los cambios realizados, desde nuestro HEAD hacia un servidor remoto y viceversa.<br> Otra forma de verlo es por <u>estados</u> de archivos: <i>confirmado</i> (committed), <i>modificado</i> (modified), y <i>preparado</i> (staged). Confirmado significa que los datos están almacenados de manera segura en tu base de datos local. Modificado significa que has modificado el archivo pero todavía no lo has confirmado a tu base de datos. Preparado significa que has marcado un archivo modificado en su versión actual para que vaya en tu próxima confirmación.</p>
-  <h3>Instalción</h3>
-  <p>En Linux, se puede instalar a través de un instalador binario, en general través de la herramienta básica de gestión de paquetes que trae tu distribución.<br> En Windows es muy fácil. El proyecto msysGit tiene uno de los procesos de instalación más sencillos. Simplemente descarga el archivo exe del instalador desde la página de <a href="https://github.com/" target="_blank">GitHub</a>, y ejecútalo: Una vez instalado, tendrás tanto la versión de línea de comandos (incluido un cliente SSH que nos será útil más adelante) como la interfaz gráfica de usuario estándar.</p>
-  <h3>Flujo de trabajo</h3>
-  <p>El flujo de trabajo se puede resumir en 3 simples pasos:</p>
-  <p>1. Modificas una serie de archivos en tu directorio de trabajo.<br>2. Preparas los archivos, añadiendolos a tu área de preparación.<br>3. Confirmas los cambios, lo que toma los archivos tal y como están en el área de preparación, y almacena esas instantáneas de manera permanente en tu directorio de <strong>Git</strong>.
-  <h3>Principales comandos</h3>
+      </section>
+      <section id="tabla-posiciones">
 
+        <table>
+          <tr>
+            <th colspan="4">3er Fecha</th>
+          </tr>
+          <tr><!--Fila-->
+            <td>1</td><!--Celdas-->
+            <td><span>Tigre</span>, 1pts<br><span>Patronato</span>, 3pts</td>
+            <td>2</td>
+            <td><span>Colón</span>, 4pts<br><span>Estudiantes</span>, 3pts</td>
+          </tr>
+          <tr><!--Fila-->
+            <td>3</td><!--Celdas-->
+            <td><span>Def. y Justicia</span>, 4pts<br><span>Únion</span>, 4pts</td>
+            <td>4</td>
+            <td><span>Argentinos Juniors</span>, 0pts<br><span>Belgrano</span>, 3pts</td>
+          </tr>
+          <tr><!--Fila-->
+            <td>5</td><!--Celdas-->
+            <td><span>Newell's</span>, 1pts<br><span>Olimpo</span>, 1pts</td>
+            <td>6</td>
+            <td><span>San Lorenzo</span>, 2pts<br><span>Arsenal</span>, 0pts</td>
+          </tr>
+          <tr><!--Fila-->
+            <td>7</td><!--Celdas-->
+            <td><span>Independiente</span>, 4pts<br><span>Lanús</span>, 0pts</td>
+            <td>8</td>
+            <td><span>Talleres</span>, 3pts<br><span>Vélez</span>, 3pts</td>
+          </tr>
+        </table>
+      </section>
+      <footer>
+        © 2019 DeporteXtremo - Derechos Reservados
+      </footer>
+    </main>
 
-  <script src="js/main.js"></script>
-  <script>
-    document.getElementById('foto-linus').onclick = mostrarAviso
-  </script>
-</body>
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+
+  </body>
 </html>
