@@ -142,6 +142,16 @@ img{
   color: #00AD98;
   font-weight: 600;
 }
+footer{
+  margin-top: 30px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  background-color: #171717;
+  color: white;
+  font-weight: 700;
+  
+}
 
 /*animaciones CSS*/
 @keyframes slider {
